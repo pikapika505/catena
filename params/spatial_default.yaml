@@ -1,0 +1,28 @@
+# params/spatial_default.yaml
+# ─────────────────────────────────────────────────────────────
+# Default parameters for Visium spatial analysis (SpaceRanger output)
+# Usage: nextflow run main.nf -profile hellbender -params-file params/spatial_default.yaml
+# ─────────────────────────────────────────────────────────────
+
+mode: "spatial"
+input_dir: "/path/to/spaceranger_outputs"  # dir containing sample/ subdirs
+outdir: "./results"
+
+# QC — spatial spots tend to have lower counts, relax thresholds
+qc_mode: "adaptive"
+min_genes: 100
+max_genes: 10000
+max_pct_mt: 30
+min_cells: 1
+mad_nmads: 3
+
+# Clustering
+n_pcs: 30
+resolution: 0.4
+n_neighbors: 15
+
+# Annotation
+annotate: true
+annotation_method: "both"
+celltypist_model: "Immune_All_Low.pkl"
+# marker_genes_file: "path/to/markers.json"

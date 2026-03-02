@@ -1,0 +1,25 @@
+{
+  "_comment": "Edit this file with marker genes relevant to your tissue/dataset.",
+  "_format": "{ 'CellTypeName': ['gene1', 'gene2', ...] }",
+
+  "T_cells_CD4":    ["CD3D", "CD3E", "CD4", "IL7R", "TRAC"],
+  "T_cells_CD8":    ["CD3D", "CD3E", "CD8A", "CD8B", "GZMK"],
+  "T_reg":          ["CD3D", "CD4", "FOXP3", "IL2RA", "CTLA4"],
+  "NK_cells":       ["NCAM1", "NKG7", "GNLY", "KLRD1", "FGFBP2"],
+  "B_cells":        ["CD19", "MS4A1", "CD79A", "CD79B", "BANK1"],
+  "Plasma_cells":   ["IGHG1", "MZB1", "SDC1", "CD38", "XBP1"],
+  "Monocytes_CD14": ["CD14", "LYZ", "S100A8", "S100A9", "VCAN"],
+  "Monocytes_CD16": ["FCGR3A", "MS4A7", "LILRB2", "HES4"],
+  "Macrophages":    ["CD68", "MRC1", "MARCO", "ADGRE1", "CSF1R"],
+  "Dendritic":      ["FCER1A", "CST3", "IL3RA", "CLEC4C", "LILRA4"],
+  "Mast_cells":     ["KIT", "CPA3", "TPSAB1", "MS4A2"],
+  "Neutrophils":    ["FCGR3B", "CXCR2", "CSF3R", "FFAR2"],
+  "Epithelial":     ["EPCAM", "KRT18", "KRT8", "CDH1", "CLDN4"],
+  "Endothelial":    ["PECAM1", "VWF", "CDH5", "CLDN5", "FLT1"],
+  "Fibroblasts":    ["COL1A1", "COL1A2", "DCN", "PDGFRA", "FAP"],
+  "Smooth_muscle":  ["ACTA2", "MYH11", "CNN1", "TAGLN"],
+  "Hepatocytes":    ["ALB", "APOB", "APOE", "CYP3A4", "TTR"],
+  "Neurons":        ["MAP2", "RBFOX3", "SYP", "TUBB3", "SNAP25"],
+  "Astrocytes":     ["GFAP", "AQP4", "S100B", "ALDH1L1"],
+  "Oligodendrocytes":["MBP", "PLP1", "MOG", "OLIG2"]
+}

@@ -1,0 +1,28 @@
+# params/scrna_default.yaml
+# ─────────────────────────────────────────────────────────────
+# Default parameters for scRNA-seq analysis (CellRanger output)
+# Usage: nextflow run main.nf -profile hellbender -params-file params/scrna_default.yaml
+# ─────────────────────────────────────────────────────────────
+
+mode: "scrna"
+input_dir: "/path/to/cellranger_outputs"   # dir containing sample/ subdirs
+outdir: "./results"
+
+# QC
+qc_mode: "adaptive"   # recommended: catches per-sample variation automatically
+min_genes: 200
+max_genes: 6000
+max_pct_mt: 20
+min_cells: 3
+mad_nmads: 3
+
+# Clustering
+n_pcs: 30
+resolution: 0.5
+n_neighbors: 20
+
+# Annotation
+annotate: true
+annotation_method: "both"
+celltypist_model: "Immune_All_Low.pkl"
+# marker_genes_file: "path/to/markers.json"   # uncomment for manual annotation

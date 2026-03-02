@@ -1,0 +1,32 @@
+# Nextflow
+.nextflow*
+work/
+trace*.txt
+timeline*.html
+report*.html
+dag*.html
+
+# Outputs
+results/
+test_results/
+runs/
+
+# Data (do not commit)
+data/*
+!data/README.md
+**/outs/**
+
+# Common large analysis files
+*.h5ad
+*.rds
+*.h5
+*.mtx*
+*.loom
+*.csv
+*.tsv
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+__pycache__/

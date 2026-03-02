@@ -1,0 +1,19 @@
+name: scrna_seurat
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - r-base=4.3
+  - r-seurat>=5.0
+  - r-seuratobject>=5.0
+  - bioconductor-singleR>=2.4       # for future SingleR integration
+  - bioconductor-celldex>=1.10
+  - r-optparse>=1.7
+  - r-dplyr>=1.1
+  - r-ggplot2>=3.4
+  - r-patchwork>=1.1
+  - r-tidyr>=1.3
+  - r-jsonlite>=1.8
+  - r-matrix>=1.6
+  - r-remotes
